@@ -10,6 +10,9 @@
 		121F9F36FCC313A1D2700CADCD068421 /* Pods-SpreadSheetView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6E7BE5BDC0A5470CAB8947A8270EF23 /* Pods-SpreadSheetView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26B0F2611938A6C28C4D7A472200C07F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		33E4570F1EB3B8085457CDD8EE25A952 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		6B613993230150ED00714827 /* SpreadSheetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613990230150ED00714827 /* SpreadSheetDelegate.swift */; };
+		6B613994230150ED00714827 /* SpreadSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613991230150ED00714827 /* SpreadSheetView.swift */; };
+		6B613995230150ED00714827 /* SpreadSheetLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613992230150ED00714827 /* SpreadSheetLayoutManager.swift */; };
 		8ED8DBE5E1E501E98EC0DFFD22A93539 /* SpreadSheetView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B745430AF7A4095B9BAF539B6036812 /* SpreadSheetView-dummy.m */; };
 		A76546281A84E1C5D518266D4D97FF0F /* Pods-SpreadSheetView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6D218FD33650866142339425391067 /* Pods-SpreadSheetView_Tests-dummy.m */; };
 		B6B7954442093EFF83ED1702E9E8C930 /* Pods-SpreadSheetView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B14244FE0A4C9A75FAE6EA138B18452C /* Pods-SpreadSheetView_Example-dummy.m */; };
@@ -45,6 +48,9 @@
 		3CE07540B1785024E796DD044CAC36AB /* Pods-SpreadSheetView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpreadSheetView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D6733E07D862D44E02C12B6F6189950 /* Pods_SpreadSheetView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpreadSheetView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C79BEEA7D0AC1205C75020DA41FB9C3 /* Pods-SpreadSheetView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpreadSheetView_Tests-Info.plist"; sourceTree = "<group>"; };
+		6B613990230150ED00714827 /* SpreadSheetDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadSheetDelegate.swift; sourceTree = "<group>"; };
+		6B613991230150ED00714827 /* SpreadSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadSheetView.swift; sourceTree = "<group>"; };
+		6B613992230150ED00714827 /* SpreadSheetLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadSheetLayoutManager.swift; sourceTree = "<group>"; };
 		6FCE5F984C6AE9D64DD819C621C56E4A /* Pods-SpreadSheetView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpreadSheetView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		739981E7AD33DB3AE4E928D755640592 /* Pods-SpreadSheetView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpreadSheetView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		74B82E5AD91387B58E301F64D07382D8 /* SpreadSheetView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpreadSheetView.modulemap; sourceTree = "<group>"; };
@@ -106,6 +112,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6B61398F230150AD00714827 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6B613990230150ED00714827 /* SpreadSheetDelegate.swift */,
+				6B613991230150ED00714827 /* SpreadSheetView.swift */,
+				6B613992230150ED00714827 /* SpreadSheetLayoutManager.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		6ECDE5267B67739C436C51FEF82C3AB0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +149,7 @@
 		917DE51B7C61B4BC949FF873A11EF812 /* SpreadSheetView */ = {
 			isa = PBXGroup;
 			children = (
+				6B61398F230150AD00714827 /* Source */,
 				E95EBA025AA2D3AE38A4A4C2A5A05CEE /* Pod */,
 				BB7124270012C46FE6F8A93CF021ECEE /* Support Files */,
 			);
@@ -312,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					05494E27A331E59D9AF58F5ACEFCA4F4 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -378,6 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B7954442093EFF83ED1702E9E8C930 /* Pods-SpreadSheetView_Example-dummy.m in Sources */,
+				6B613993230150ED00714827 /* SpreadSheetDelegate.swift in Sources */,
+				6B613995230150ED00714827 /* SpreadSheetLayoutManager.swift in Sources */,
+				6B613994230150ED00714827 /* SpreadSheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +494,7 @@
 			baseConfigurationReference = 83AB137389E43842D6EA38E722D99531 /* Pods-SpreadSheetView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -491,6 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -691,6 +718,7 @@
 			baseConfigurationReference = C2E5B63263E5F43D469479716F8379E6 /* Pods-SpreadSheetView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -713,6 +741,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
