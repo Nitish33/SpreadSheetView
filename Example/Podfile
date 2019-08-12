@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SpreadSheetView_Example' do
+  pod 'SpreadSheetView', :path => '../'
+
+  target 'SpreadSheetView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
