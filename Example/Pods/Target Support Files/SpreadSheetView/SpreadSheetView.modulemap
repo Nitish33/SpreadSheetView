@@ -1,0 +1,6 @@
+framework module SpreadSheetView {
+  umbrella header "SpreadSheetView-umbrella.h"
+
+  export *
+  module * { export * }
+}

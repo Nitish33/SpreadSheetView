@@ -1,0 +1,16 @@
+PODS:
+  - SpreadSheetView (0.1.0)
+
+DEPENDENCIES:
+  - SpreadSheetView (from `../`)
+
+EXTERNAL SOURCES:
+  SpreadSheetView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SpreadSheetView: 4ba322aa9ec0c1cc6ad53c406920fd7e143d91a6
+
+PODFILE CHECKSUM: 6053a02d192a6f27aecdc7a0886228ab6422342e
+
+COCOAPODS: 1.7.1

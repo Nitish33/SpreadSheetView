@@ -1,0 +1,22 @@
+{
+  "name": "SpreadSheetView",
+  "version": "0.1.0",
+  "summary": "A short description of SpreadSheetView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nitishprasad33@gmail.com/SpreadSheetView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nitishprasad33@gmail.com": "nitishprasad33@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nitishprasad33@gmail.com/SpreadSheetView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SpreadSheetView/Classes/**/*"
+}

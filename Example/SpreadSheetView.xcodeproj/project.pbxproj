@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* SpreadSheetView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpreadSheetView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		711BE7D59E8DA87E0778C4CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		711BE7D59E8DA87E0778C4CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		80E3D79D95F366832F1E0C03 /* Pods_SpreadSheetView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpreadSheetView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D19F9FF9E2F6CE73477A04D /* SpreadSheetView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SpreadSheetView.podspec; path = ../SpreadSheetView.podspec; sourceTree = "<group>"; };
+		9D19F9FF9E2F6CE73477A04D /* SpreadSheetView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SpreadSheetView.podspec; path = ../SpreadSheetView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B1C00C6B612F620E94C23F02 /* Pods-SpreadSheetView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreadSheetView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SpreadSheetView_Example/Pods-SpreadSheetView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B621EEA6F155349A08DDF6F4 /* Pods-SpreadSheetView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpreadSheetView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SpreadSheetView_Tests/Pods-SpreadSheetView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1526EE61D838DE2DC1FE5C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D1526EE61D838DE2DC1FE5C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				B621EEA6F155349A08DDF6F4 /* Pods-SpreadSheetView_Tests.debug.xcconfig */,
 				378A36824CEE7F7DDED48CD0 /* Pods-SpreadSheetView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
